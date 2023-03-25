@@ -1,0 +1,233 @@
+html, 
+body {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.row {
+    height: 100%;
+}
+
+#score {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    height: 38em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center ;
+    border-radius: 2em;
+    z-index: 2;
+}
+
+#white {
+    background-color: white;
+    height: 38em;
+    position: relative;
+    right: 1.5em;
+    z-index: 1;
+    border-radius: 0 2em 2em 0;
+}
+
+#score-p1 {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1.5em;
+    color: hsl(224, 30%, 67%);
+    font-weight: 700;
+}
+
+#score-circle {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 15em;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#big-circle-nr {
+    font-size: 5em;
+    color: white;
+    font-weight: 700;
+}
+
+#small-circle-nr {
+    color: lightgrey;
+    font-weight: 700;
+}
+
+#h2-score {
+    color: white;
+    margin-top: 0.5em;
+    font-weight: 700;
+}
+
+#score-p2 {
+    color: lightgray;
+    font-weight: 500;
+}
+
+#h2-white {
+    text-align: left;
+    position: relative;
+    left: 1em;
+    margin: 1em 0 1em 0;
+    font-weight: 500;
+}
+
+.card {
+    text-align: left;
+    position: relative;
+    left: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    width: 85%;
+    padding: 0.5em 0 0 0;
+    margin: 1em 0 0 0;
+}
+
+#redcard {
+    background-color: hsl(0, 100%, 97%);
+    color: hsl(0, 100%, 67%);
+    font-weight: 700;
+}
+
+#yellowcard {
+    background-color: hsl(39, 100%, 86%);
+    color: hsl(39, 100%,56%);
+    font-weight: 700;
+}
+#greencard {
+    background-color: hsl(166, 100%, 67%);
+    color: hsl(166, 100%, 37%);
+    font-weight: 700;
+}
+
+#bluecard {
+    background-color: hsl(234, 85%, 75%);
+    color: hsl(234, 85%, 45%);
+    font-weight: 700;
+}
+
+#button {
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    text-align: center;
+    position: relative;
+    left: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    width: 85%;
+    padding: 0.5em 0 0.5em 0;
+    margin: 1em 0 1em 0;
+    border-radius: 2em;
+}
+
+#icon {
+    margin-right: 0.5em;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+    #flex {
+        display: flex;
+        flex-direction: column;
+    }
+    #score {
+        height: 20em;
+        position: relative;
+        top: 1em;
+    }
+    
+    #white {
+        height: 20em;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 0;
+        text-align: center;
+    }
+    
+    #score-p1 {
+        text-align: center;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        font-size: 1em;
+    }
+    
+    #score-circle {
+        width: 8em;
+        height: 8em;
+    }
+    
+    #big-circle-nr {
+        font-size: 2em;
+        margin-top: 1em;
+    }
+    
+    #small-circle-nr {
+        font-size: 0.75em;
+        margin-bottom: 2em;
+    }
+    
+    #h2-score {
+        font-size: 2em;
+    }
+    
+    #score-p2 {
+        font-size: 0.75em;
+    }
+    
+    #h2-white {
+        font-size: 1em;
+    }
+    
+    .card {
+        text-align: center;
+        position: relative;
+        left: 2em;
+        font-size: 0.5em;
+    }
+    
+    #button {
+        text-align: center;
+        position: relative;
+        left: 0;
+        font-size: 0.5em;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    #score {
+        height: 20em;
+        width: 80%;
+        position: relative;
+        top: 1em;
+    }
+    
+    #white {
+        height: 20em;
+        width: 80%;
+    }
+    .card {
+        text-align: center;
+        position: relative;
+        left: 2.5em;
+    }
+}
